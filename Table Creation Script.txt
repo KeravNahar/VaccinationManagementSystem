@@ -1,0 +1,14 @@
+CREATE TABLE Citizen(
+citizen_Id NUMBER(14) PRIMARY KEY,
+full_name VARCHAR2(15),
+mobile_number NUMBER(14),
+vaccine_name VARCHAR2(15),
+vaccination_dose NUMBER(10),
+city VARCHAR2(15),
+Dose1Date Date,
+Dose2Date Date,
+BoosterShot number(2),
+BoosterDate Date,
+);
+
+INSERT INTO Citizen VALUES(1,'John Doe',707227895,'COVAXIN',1,'Raipur',to_Date('2022-11-12','yyyy-mm-dd'),null,0,null);
